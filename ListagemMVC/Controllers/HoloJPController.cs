@@ -63,7 +63,27 @@ namespace ListagemMVC.Controllers
             return View();
         }
 
-        public IActionResult Fantasy()
+        public IActionResult Gen3()
+        {
+            return View();
+        }
+
+        public IActionResult Gamers()
+        {
+            return View();
+        }
+
+        public IActionResult Gen4()
+        {
+            return View();
+        }
+
+        public IActionResult Gen5()
+        {
+            return View();
+        }
+
+        public IActionResult Gen6()
         {
             return View();
         }
