@@ -32,10 +32,21 @@
                                     <a asp-area="" asp-controller="HoloEN" asp-action="ProjectHOPE">HOPE</a>
                                 </div>
                             </div>
-                           
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="HoloJP" asp-action="HoloJP">Holo JP</a>
+                            <div class="dropdown">
+                                <div class="dropbtn">
+                                     <a class="nav-link text-dark" asp-area="" asp-controller="HoloJP" asp-action="About">Holo JP</a>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a asp-area="" asp-controller="HoloJP" asp-action="Gen0">Generation 0</a>
+                                    <a asp-area="" asp-controller="HoloJP" asp-action="Gen1">Generation 1</a>
+                                    <a asp-area="" asp-controller="HoloJP" asp-action="Gen2">Generation 2</a>
+                                    <a asp-area="" asp-controller="HoloJP" asp-action="Fantasy">Fantasy</a>
+                                </div>
+
+                            </div>
+                           
                         </li>
                     </ul>
                 </div>

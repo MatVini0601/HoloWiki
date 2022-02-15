@@ -47,5 +47,30 @@ namespace ListagemMVC.Controllers
             model._units = _units;
             return View(model);
         }
+
+        public IActionResult Gen0()
+        {
+            return View();
+        }
+
+        public IActionResult Gen1()
+        {
+            return View();
+        }
+
+        public IActionResult Gen2()
+        {
+            return View();
+        }
+
+        public IActionResult Fantasy()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }
