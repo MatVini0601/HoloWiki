@@ -1,0 +1,134 @@
+﻿@model ListagemMVC.Controllers.ViewModelJP
+@{
+    ViewData["Title"] = "Hololive JP";
+}
+
+<div class="text">
+    <h1 class="display-4">Hololive JP</h1>
+    <div class="dropdown">
+        <div class="dropbtn">Generations <span>ˇ</span></div>
+            <div class="dropdown-content">
+                @foreach (var unit in @Model._units)
+                {
+                    <a href="#@unit.name">@unit.name</a>
+                }
+            </div>
+    </div>
+
+    <div class="display-content">
+        <section id="Generation 0">
+            <h3>Generation 0</h3>
+            <h6>Hololive Generation 0 (ホロライブ0期生), previously known as Hololive Affiliated Talents, is part of Hololive where members joined outside of the usual wave of recruitment. Formerly an unofficial name for the group, members of the group eventually use the term in their social media handles, video title descriptions, and on certain merchandise involving them. An update to Hololive Production's official website finally officially lists them as "hololive Generation 0".</h6>
+            <ul style="" class="cards">
+                @foreach (var talent in @Model._talentsJP0)
+                {
+                    <li>
+                        <a href="@talent.Channel" class="card">
+                            <img src="@talent.Image" class="card__image" alt="" />
+                            <div class="card__overlay">
+                            <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                                <div class="card__header-text">
+                                <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                                <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                                </div>
+                            </div>
+                            <p class="card__description">@talent.Description</p>
+                            </div>
+                        </a>      
+                    </li>
+                }
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div class="text">
+    <div class="display-content">
+        <section id="1st Generation">
+            <h3>1st Generation</h3>
+            <h6>hololive 1st Generation (ホロライブ1期生) is the first wave of VTubers under Hololive.</h6>
+            <ul style="" class="cards">
+                @foreach (var talent in @Model._talentsJP1)
+                {
+                    <li>
+                        <a href="@talent.Channel" class="card">
+                            <img src="@talent.Image" class="card__image" alt="" />
+                            <div class="card__overlay">
+                            <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="card__header-text">
+                                <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                                <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                                </div>
+                            </div>
+                            <p class="card__description">@talent.Description</p>
+                            </div>
+                        </a>      
+                    </li>
+                }
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div class="text">
+    <div class="display-content">
+        <section id="2nd Generation">
+            <h3>2nd Generation</h3>
+            <h6>hololive 2nd Generation (ホロライブ2期生) is the second wave of VTubers under Hololive.</h6>
+            <ul style="" class="cards">
+                @foreach (var talent in @Model._talentsJP2)
+                {
+                    <li>
+                        <a href="@talent.Channel" class="card">
+                            <img src="@talent.Image" class="card__image" alt="" />
+                            <div class="card__overlay">
+                            <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="card__header-text">
+                                <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                                <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                                </div>
+                            </div>
+                            <p class="card__description">@talent.Description</p>
+                            </div>
+                        </a>      
+                    </li>
+                }
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div class="text">
+    <div class="display-content">
+        <section id="Fantasy">
+            <h3>3rd Generation -Fantasy-</h3>
+            <h6>hololive 3rd Generation (ホロライブ3期生), also known as Hololive Fantasy (ホロライブファンタジー, stylized as HOLOLIVE FANTASY), is the third wave of VTubers under Hololive.</h6>
+            <ul style="" class="cards">
+                @foreach (var talent in @Model._talentsJP3)
+                {
+                    <li>
+                        <a href="@talent.Channel" class="card">
+                            <img src="@talent.Image" class="card__image" alt="" />
+                            <div class="card__overlay">
+                            <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                                <div class="card__header-text">
+                                <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                                <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                                </div>
+                            </div>
+                            <p class="card__description">@talent.Description</p>
+                            </div>
+                        </a>      
+                    </li>
+                }
+            </ul>
+        </section>
+    </div>
+</div>
+<div>
+    <p>Saiba mais <a href="https://virtualyoutuber.fandom.com/wiki/Hololive">Hololive Fandom</a>.</p>
+</div>

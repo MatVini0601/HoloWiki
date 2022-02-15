@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ListagemMVC.Models.HoloEN>
+@{
+    ViewData["Title"] = "Hololive Council";
+}
+<section id="holoCouncil">
+    <h3>HoloCouncil</h3>
+    <h6>Hololive English Council, also known as Hololive English -Council- (Hololive English -議会-, stylized as hololive English -Council-) and unofficially as Hololive English 2nd Generation, is the second (third, if counting Project: HOPE) wave of VTubers under Hololive English. Ahead of its reveal, the Hololive English YouTube channel uploaded 2 teaser videos, narrated by IRyS, which provided background information on the generation's story.</h6>
+    <ul class="cards">
+        @foreach (var talent in Model)
+        {
+            <li>
+                <a href="@talent.Channel" class="card">
+                    <img style="width:100%; height:auto" src="@talent.Image" class="card__image" alt="" />
+                    <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                        <div class="card__header-text">
+                        <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                        <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                        </div>
+                    </div>
+                    <p class="card__description">@talent.Description</p>
+                    </div>
+                </a>      
+            </li>
+        }
+    </ul>
+</section>

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ListagemMVC.Models.HoloEN>
+@{
+    ViewData["Title"] = "Hololive Myth";
+}
+<section id="holoMyth">
+    <h3>HoloMyth</h3>
+    <h6>Hololive English -Myth- (stylized as hololive English -Myth-, shortened as holoMyth), is the first wave of VTubers under Hololive English. The core concept of this hololive English group is VTubers who hail from worlds of legend.</h6>
+    <ul class="cards">
+        @foreach (var talent in Model)
+        {
+            <li>
+                <a href="@talent.Channel" class="card">
+                    <img style="width:100%; height:auto" src="@talent.Image" class="card__image" alt="" />
+                    <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                        <div class="card__header-text">
+                        <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                        <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                        </div>
+                    </div>
+                    <p class="card__description">@talent.Description</p>
+                    </div>
+                </a>      
+            </li>
+        }
+    </ul>
+</section>
