@@ -5,14 +5,6 @@ using System.Net.Http.Headers;
 
 namespace ListagemMVC.Controllers
 {
-
-    public class ViewModelEN
-    {
-        public List<HoloEN> _talentsMyth { get; set; }
-        public List<HoloEN> _talentsCouncil { get; set; }
-        public List<HoloEN> _talentsHOPE { get; set; }
-        public List<Units> _units { get; set; }
-    }
     public class HoloENController : Controller
     {
         string baseUrl = "https://matvini0601.github.io/";
