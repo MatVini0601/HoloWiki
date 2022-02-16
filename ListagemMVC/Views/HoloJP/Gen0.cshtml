@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ListagemMVC.Models.HoloJP>
+@{
+    ViewData["Title"] = "Generation 0";
+}
+
+<section id="gen0">
+    <h3>Generation 0</h3>
+    <h6>Hololive Generation 0 (ホロライブ0期生), previously known as Hololive Affiliated Talents, is part of Hololive where members joined outside of the usual wave of recruitment. Formerly an unofficial name for the group, members of the group eventually use the term in their social media handles, video title descriptions, and on certain merchandise involving them. An update to Hololive Production's official website finally officially lists them as "hololive Generation 0".</h6>
+    <ul style="" class="cards">
+        @foreach (var talent in Model)
+        {
+            <li>
+                <a href="@talent.Channel" class="card">
+                    <img src="@talent.Image" class="card__image" alt="" />
+                    <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <div class="card__header-text">
+                        <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                        <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                        </div>
+                    </div>
+                    <p class="card__description">@talent.Description</p>
+                    </div>
+                </a>      
+            </li>
+        }   
+    </ul>
+</section>

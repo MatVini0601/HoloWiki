@@ -31,8 +31,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0VOXFByb2plY3RIT1BFLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/HoloJP/HoloJP.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0pQXEhvbG9KUC5jc2h0bWw=
+[C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/HoloJP/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0pQXEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/HoloJP/Gen0.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0pQXEdlbjAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/HoloJP/Gen1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0pQXEdlbjEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/HoloJP/Gen2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0pQXEdlbjIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/HoloJP/Gen3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb0pQXEdlbjMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/neily/source/repos/ListagemMVC/ListagemMVC/Views/Home/Index.cshtml]
