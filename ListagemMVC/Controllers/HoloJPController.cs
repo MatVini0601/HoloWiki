@@ -51,9 +51,12 @@ namespace ListagemMVC.Controllers
             return View(gen3);
         }
 
-        public IActionResult Gamers()
+        public async Task<IActionResult> Gamers()
         {
-            return View();
+            List<HoloJP> gamers = new List<HoloJP>();
+            string holoRes = await Request("Gamers");
+            gamers = JsonConvert.DeserializeObject<List<HoloJP>>(holoRes);
+            return View(gamers);
         }
 
         public IActionResult Gen4()
