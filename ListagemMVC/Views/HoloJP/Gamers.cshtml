@@ -1,6 +1,32 @@
-﻿namespace ListagemMVC.Views.HoloJP
-{
-    public class Gamers
-    {
-    }
+﻿@model IEnumerable<ListagemMVC.Models.HoloJP>
+@{
+    ViewData["Title"] = "Hololive Gamers";
 }
+
+<section id="Fantasy">
+    <h3>GAMERS</h3>
+    <h6>Hololive Gamers (ホロライブゲーマーズ stylized as hololive GAMERS), is a sub-unit within Hololive. Members of the group all have an animal-like design and have all joined outside of the usual waves of recruitment for Hololive. Its leader is Shirakami Fubuki.</h6>
+    <ul style="" class="cards">
+        @foreach (var talent in Model)
+        {
+            <li>
+                <a href="@talent.Channel" class="card">
+                    <img src="@talent.Image" class="card__image" alt="" />
+                    <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                        <div class="card__header-text">
+                        <h3 class="card__title">@talent.Nome - <label>@talent.NickName</label></h3>            
+                        <span class="card__status">Debuted in @talent.DebutDate at @talent.Unit</span>
+                        </div>
+                    </div>
+                    <p class="card__description">@talent.Description</p>
+                    </div>
+                </a>      
+            </li>
+        }
+    </ul>
+</section>
+<div>
+    <p>Saiba mais <a href="https://virtualyoutuber.fandom.com/wiki/Hololive">Hololive Fandom</a>.</p>
+</div>
